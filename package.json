@@ -1,11 +1,20 @@
 {
   "name": "@okorg/auth-utils",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "./build/index.js",
+  "types": "./build/index.d.ts",
+  "files": [
+    "./build/**/*"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "del ./build/*",
+    "build": "tsc "
   },
   "author": "Orest Kozolup",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "del-cli": "^6.0.0",
+    "typescript": "^5.8.3"
+  }
 }
